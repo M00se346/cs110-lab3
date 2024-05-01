@@ -1,0 +1,17 @@
+.screen{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_box{
+    margin: 100px 100px 100px 100px;
+    padding: 5px 20px 5px 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: white;
+}
