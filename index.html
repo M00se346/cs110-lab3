@@ -13,26 +13,32 @@
 
             <!-- test section -->
             <p id="test"> replace this with article title?</p>
-            <button onclick ="getResponse('10');"> test! </button>
+            <button onclick ="getResponse_SB(1);"> test! </button>
             <!-- end of test -->
 
 
             <h2>Filter</h2>
             <p>
                 <form action="#">
-                <b>Sort By:</b><br>
-                
-                    <button onclick=""> </button> Most viewed <br>
-                    <button onclick=""> </button> Most shared <br>
-                    <button onclick=""> </button> Most emailed <br>
-             
-                <br>
+                    <b>Sort By:</b><br>
+                    <script>
+                        getResponse_SB(0);
+                    </script>
+                    
+                        <button id="startSB" onclick="getResponse_SB(0)"> </button> Most Viewed<br>
+                        <button onclick="getResponse_SB(1)"> </button> Most shared <br>
+                        <button onclick="getResponse_SB(2)"> </button> Most emailed <br>
+                    
+                    <br>
 
-                <b>Time Frame:</b><br>
-                    <button onclick=""> </button> Day <br>
-                    <button onclick=""> </button> Week <br>
-                    <button onclick=""> </button> Month <br>
-
+                    <b>Time Frame:</b><br>
+                    
+                    <div class = "options">
+                        <button id="startTF" onclick="getResponse_TF(0)"> </button> Day <br>
+                        <button onclick="getResponse_TF(1)"> </button> Week <br>
+                        <button onclick="getResponse_TF(2)"> </button> Month <br>
+                    </div>
+                    
                 </form>
             </p>
         </div>
