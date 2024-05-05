@@ -1,38 +1,15 @@
-//this needs to be the external link to the API stuff from NYtimes?
-
-//ex_link = 'https://jsonplaceholder.typicode.com/todos/1';
-NYT_link = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
+NYT_link = "https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=hd2doA0T1atpRi9Vs6foDnEjnrNRDREo" ;
 
 // fetch(NYT_link)
 //       .then(response => response.json())
 //       .then(json => console.log(json))
 
 
-
-/* 
-EXAMPLE:
-
-async function fetchMoviesJSON() {
-  const response = await fetch('/movies');
-  const movies = await response.json();
-  return movies;
-}
-
-fetchMoviesJSON().then(movies => {
-  movies; // fetched movies
-});
-
-*/
-
-
-async function getResponse(){
-
+async function getResponse(num_string){
 
     const response = await fetch(NYT_link);
     const data = await response.json();
-    console.log(data.headline);
-    document.getElementById('test').innerHTML = data.headline;
-    
-
+    console.log(data);
+    document.getElementById('test').innerHTML = data.results[num_string].title;
 
 }
