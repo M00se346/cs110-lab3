@@ -10,8 +10,9 @@
     border-radius: 10px;
 }
 
-.options{
-    /* padding-top: 10px; */
+li{
+    padding-top: 10px;
+    align-items: center;
 }
 
 .n{
