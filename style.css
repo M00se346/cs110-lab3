@@ -1,13 +1,45 @@
+
+body {background-color: black;}
+
+
 .screen{
     display: flex;
     flex-direction: row;
+    /* background-color: black; */
+    font-family: sans-serif;
 }
 
 .left_box{
-    margin: 100px 100px 100px 100px;
-    padding: 5px 20px 5px 20px;
-    background-color: aqua;
+    margin: 100px 100px 100px 50px;
+    padding: 5px 0px 5px 20px;
+    background-color: white;
     border-radius: 10px;
+    height: 350px;
+}
+
+.filter{
+    width: 200px;
+}
+
+.right_box{
+    /* width: 700px; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 100px 50px 100px 100px;
+    padding: 5px 20px 5px 20px;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+.article_result{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 5px 20px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+
 }
 
 .options{

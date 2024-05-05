@@ -53,9 +53,40 @@ async function getResponse_SB(i){
     const response = await fetch(start + sortBy[i]+ "/"+ timeFrame[global_j] + end);
     const data = await response.json();
     console.log(data);
-    document.getElementById('test').innerHTML = data.results[0].title;
+    document.getElementById('title0').innerHTML = data.results[0].title;
+    document.getElementById('date').innerHTML = data.results[0].published_date;
+    document.getElementById('image').src = data.results[0].media[0]["media-metadata"][0].url
+    //data.results[0].url;
+    document.getElementById('snippet').innerHTML = data.results[0].abstract;
+
 
 }
+
+
+
+
+// async function getResponse_SB(i){
+//     global_i = i;
+//     const response = await fetch(start + sortBy[i]+ "/"+ timeFrame[global_j] + end);
+//     const data = await response.json();
+//     console.log(data);
+//     let temp = 'title';
+//     for (let k = 0; k < 5; k++) {
+//         document.getElementById(temp + k).innerHTML = data.results[k].title;
+//         // document.getElementById('date').innerHTML = data.results[k].published_date;
+//         // document.getElementById('date').src = data.results[k].url;
+//         // document.getElementById('snippet').innerHTML = data.results[k].abstract;
+//         temp = 'title';
+//     }
+
+
+
+// }
+
+
+
+
+
 
 async function getResponse_TF(j){
   global_j = j;
