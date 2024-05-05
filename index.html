@@ -14,7 +14,8 @@
             <!-- test section 
             <p id="test"> replace this with article title?</p>
             <button onclick ="getResponse_SB(1);"> test! </button>
-             end of test -->
+
+            <!-- end of test -->
 
 
             <h2>Filter</h2>
@@ -24,21 +25,51 @@
                     <script>
                         getResponse_SB(0);
                     </script>
-                        <div class="filter">
-                            <button id="startSB" onclick="getResponse_SB(0)"> </button> Most Viewed <br>
-                            <button onclick="getResponse_SB(1)"> </button> Most shared <br>
-                            <button onclick="getResponse_SB(2)"> </button> Most emailed <br>
-                        </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_SB(0)" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          <!--THE ONE THAT IS CHECKED BY DEFAULT--->
+                          Most Viewed
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_SB(1)">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Most Shared
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_SB(2)">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Most Emailed
+                        </label>
+                      </div>
+                    <!----->
+                    
                     <br>
 
                     <b>Time Frame:</b><br>
-                    
-                    <div class = "options">
-                        <button id="startTF" onclick="getResponse_TF(0)"> </button> Day <br>
-                        <button onclick="getResponse_TF(1)"> </button> Week <br>
-                        <button onclick="getResponse_TF(2)"> </button> Month <br>
-                    </div>
-                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_TF(0)" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          <!--THE ONE THAT IS CHECKED BY DEFAULT--->
+                          Day
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_TF(1)">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Week
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" onclick = "getResponse_TF(2)">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Month
+                        </label>
+                      </div>
+                    <!----->
+      
                 </form>
             </p>
         </div>
