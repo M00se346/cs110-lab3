@@ -21,10 +21,10 @@ var start = "https://api.nytimes.com/svc/mostpopular/v2/";
 
 var end = ".json?api-key=hd2doA0T1atpRi9Vs6foDnEjnrNRDREo";
 
-fetch(NYT_link)
-.then(response => response.json())
-.then(data => {
-console.log(data);
+// fetch(NYT_link)
+// .then(response => response.json())
+// .then(data => {
+// console.log(data);
 
 // data.results.map(article=>{
 // console.log(article.title);
