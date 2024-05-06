@@ -100,3 +100,9 @@ button:active{
 button:focus{
     background:blue;
 }
+
+img{
+    width: 150px;
+    max-height: 100px;
+    border-radius: 20px;
+}
