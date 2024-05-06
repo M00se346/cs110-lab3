@@ -133,3 +133,17 @@ img{
     }
 
 }
+
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_top{
+    margin-right: 10px;
+}
+
+.inner_top_date{
+    margin-left: auto;
+    margin-top: 10px;
+}
