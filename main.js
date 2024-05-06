@@ -75,5 +75,11 @@ async function getResponse_TF(j){
   const response = await fetch(start + sortBy[global_i]+ "/"+ timeFrame[j] + end);
   const data = await response.json();
   console.log(data);
-  document.getElementById('test').innerHTML = data.results[0].title;
+  
+  document.getElementById('title0').innerHTML = data.results[0].title;
+  document.getElementById('date').innerHTML = data.results[0].published_date;
+  document.getElementById('image').src = data.results[0].media[0]["media-metadata"][0].url
+  //data.results[0].url;
+  document.getElementById('snippet').innerHTML = data.results[0].abstract;
+
 }
