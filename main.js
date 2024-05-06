@@ -34,27 +34,17 @@ var start = "https://api.nytimes.com/svc/mostpopular/v2/";
 
 var end = ".json?api-key=hd2doA0T1atpRi9Vs6foDnEjnrNRDREo";
 
-fetch(NYT_link)
-.then(response => response.json())
-.then(data => {
-console.log(data);
+// fetch(NYT_link)
+// .then(response => response.json())
+// .then(data => {
+// console.log(data);
 
-data.results.map(article=>{
-console.log(article.title);
+// data.results.map(article=>{
+// console.log(article.title);
 
-})
+// })
 
-})
-
-
-// clicked button when first load
-const specialButton = document.getElementById('startSB');
-
-// Click the special button automatically
-specialButton.click();
-
-// document.getElementById("startSB").click().css('background', 'green');
-// document.getElementById("startTF").click().css('background', 'green');
+// })
 
 
 // async function getResponse_SB(i){
@@ -95,6 +85,7 @@ async function getResponse_SB(i){
         document.getElementById(snippetX).innerHTML = data.results[k].abstract;
     }
 
+
 }
 
 
@@ -107,6 +98,20 @@ async function getResponse_TF(j){
   const response = await fetch(start + sortBy[global_i]+ "/"+ timeFrame[j] + end);
   const data = await response.json();
   console.log(data);
-  document.getElementById('test').innerHTML = data.results[0].title;
+  
+  for (let k = 0; k < 5; k++) {
+    let titleX = 'title' + k;
+    let dateX = 'date' + k;
+    let imageX = 'image' + k;
+    let snippetX = 'snippet' + k;
+    console.log(titleX);
+    document.getElementById(titleX).innerHTML = data.results[k].title;
+    document.getElementById(dateX).innerHTML = data.results[k].published_date;
+    document.getElementById(imageX).src = data.results[k].media[0]["media-metadata"][0].url
+    document.getElementById(snippetX).innerHTML = data.results[k].abstract;
+    }
+  
 
 }
+
+

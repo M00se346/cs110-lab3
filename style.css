@@ -1,5 +1,4 @@
-
-body {background-color: black;}
+body {background-color: rgb(30, 32, 33);}
 
 
 .screen{
@@ -10,11 +9,25 @@ body {background-color: black;}
 }
 
 .left_box{
-    margin: 100px 100px 100px 50px;
-    padding: 5px 0px 5px 20px;
-    background-color: white;
+    background-color: rgb(251, 251, 251);
+    width: 300px;
+    padding: 0px 10px 20px 30px;
     border-radius: 10px;
-    height: 350px;
+    margin-left: 0.5%;
+    margin-top: 3%;
+    margin-bottom: 90%;
+    
+}
+
+.image-format{
+    width:20%;
+}
+
+.post-content{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    gap: 2%;
 }
 
 .filter{
@@ -22,28 +35,49 @@ body {background-color: black;}
 }
 
 .right_box{
-    /* width: 700px; */
+    width: 700px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 100px 50px 100px 100px;
-    padding: 5px 20px 5px 20px;
-    background-color: lightpink;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 2%;
+    padding: 0px 20px 5px 20px;
+    background-color: rgba(255, 182, 193, 0);
     border-radius: 10px;
+    gap: 1px;
+    
+}
+
+#date{
+    margin-top: -1%;
+    margin-bottom: 2%;
+    margin-left: 90%;
 }
 
 .article_result{
     display: flex;
     flex-direction: column;
     padding: 5px 20px 5px 20px;
-    background-color: lightgreen;
+
+    background-color: rgba(255, 255, 255, 0.721);
     border-radius: 10px;
-    margin: 10px 0px 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 2%;
 
 }
 
 .options{
     /* padding-top: 10px; */
+}
+
+.n{
+    margin-top:0px;
+}
+
+li{
+    padding-top: 10px;
+    align-items: center;
 }
 
 .n{
