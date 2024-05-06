@@ -11,35 +11,66 @@
     <div class = "screen">
         <div class = "left_box">
 
-            <!-- test section 
+            <!-- test section
             <p id="test"> replace this with article title?</p>
             <button onclick ="getResponse_SB(1);"> test! </button>
-             end of test -->
+
+            end of test -->
 
 
             <h2>Filter</h2>
             <p>
-                <form action="#">
-                    <b>Sort By:</b><br>
-                    <script>
-                        getResponse_SB(0);
-                    </script>
-                        <div class="filter">
-                            <button onclick="getResponse_SB(0)"> </button> Most viewed <br>
-                            <button onclick="getResponse_SB(1)"> </button> Most shared <br>
-                            <button onclick="getResponse_SB(2)"> </button> Most emailed <br>
-                        </div>
-                    <br>
+            <form action="#">
+                <b>Sort By:</b><br>
+                <script>
+                    getResponse_SB(0);
+                </script>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="group1" onclick = "getResponse_SB(0)" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <!--THE ONE THAT IS CHECKED BY DEFAULT--->
+                      Most Viewed
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="group1" onclick = "getResponse_SB(1)">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Most Shared
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="group1" onclick = "getResponse_SB(2)">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Most Emailed
+                    </label>
+                  </div>
+                <!----->
+                
+                <br>
 
-                    <b>Time Frame:</b><br>
-                    
-                    <div class = "options">
-                        <button id="startTF" onclick="getResponse_TF(0)"> </button> Day <br>
-                        <button onclick="getResponse_TF(1)"> </button> Week <br>
-                        <button onclick="getResponse_TF(2)"> </button> Month <br>
-                    </div>
-                    
-                </form>
+                <b>Time Frame:</b><br>
+                <div class="form-check">
+                    <input class="form-check-input2" type="radio" name="group2" onclick = "getResponse_TF(0)" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <!--THE ONE THAT IS CHECKED BY DEFAULT--->
+                      Day
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input2" type="radio" name="group2" onclick = "getResponse_TF(1)">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Week
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input2" type="radio" name="group2" onclick = "getResponse_TF(2)">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Month
+                    </label>
+                  </div>
+                <!----->
+  
+            </form>
             </p>
         </div>
         <div class ="right_box">
@@ -47,44 +78,52 @@
             <div class = "article_result"> 
                 <h2 id = "title0"> title goes here </h2> 
                 <p id = "date0" > date </p>
+               <div class = "post-content">
                 <img id="image0" src="" alt="image goes here">
                 <p id = "snippet0"> article info goes here </p>
+                </div>
             </div>
 
             <div class = "article_result"> 
                 <h2 id = "title1"> title goes here </h2> 
                 <p id = "date1" > date </p>
+                <div class = "post-content">
                 <img id="image1" src="" alt="image goes here">
                 <p id = "snippet1"> article info goes here </p>
+            </div>
+
             </div>
 
 
             <div class = "article_result"> 
                 <h2 id = "title2"> title goes here </h2> 
                 <p id = "date2" > date </p>
+              <div class = "post-content">
                 <img id="image2" src="" alt="image goes here">
                 <p id = "snippet2"> article info goes here </p>
+                </div>
             </div>
 
 
             <div class = "article_result"> 
                 <h2 id = "title3"> title goes here </h2> 
                 <p id = "date3" > date </p>
+              <div class = "post-content">
                 <img id="image3" src="" alt="image goes here">
                 <p id = "snippet3"> article info goes here </p>
+                </div>
             </div>
-
+        
 
             <div class = "article_result"> 
                 <h2 id = "title4"> title goes here </h2> 
                 <p id = "date4" > date </p>
-                <img id="image4" src="" alt="image goes here">
-                <p id = "snippet4"> article info goes here </p>
+                <div class = "post-content">
+                  <img id="image4" src="" alt="image goes here">
+                  <p id = "snippet4"> article info goes here </p>
+                </div>
             </div>
-
-
-
-        </div>
+    </div>
     </div>
    
     <script src = "main.js"></script>
